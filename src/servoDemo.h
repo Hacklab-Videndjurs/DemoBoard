@@ -4,6 +4,15 @@
 #include <Arduino.h>
 #include <Servo.h>
 
+/*
+  ----------------------------------------
+
+  This example will use both a potentiometer and a servo. The potentiometer is used to get the degrees that the servo should rotate.
+  There has been implemented some safe guards to make the servo cooperate correctly with the information the potentiometer gives
+
+  ----------------------------------------
+*/
+
 namespace ServoDemo{
   // An object for the servo
   Servo servo;
@@ -27,8 +36,6 @@ namespace ServoDemo{
 
   void Update(){
     potVal = analogRead(potPin); // Read what value the potentiometer has
-
-    Serial.println(potVal);
 
     if(potVal < 50){ // debuffer to the potentiometer as when it gets too low it fluctuates between 0 and 50
       potVal = 50;
