@@ -32,7 +32,7 @@ namespace distanceDemo{
     }
 
     void DisplayUpdate(){
-        //lcd.clear();
+        lcd.clear();
         lcd.print(cm);
         lcd.print(" cm");
     }
