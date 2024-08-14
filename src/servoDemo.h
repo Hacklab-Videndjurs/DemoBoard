@@ -37,7 +37,7 @@ namespace ServoDemo{
   void Update(){
     potVal = analogRead(potPin); // Read what value the potentiometer has
 
-    if(potVal < 50){ // debuffer to the potentiometer as when it gets too low it fluctuates between 0 and 50
+    if(potVal < 50){ // buffer to the potentiometer as when it gets too low it fluctuates between 0 and 50
       potVal = 50;
     }
     else{

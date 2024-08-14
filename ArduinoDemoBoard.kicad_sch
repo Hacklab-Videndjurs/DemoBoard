@@ -4222,7 +4222,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "NHD-C0220BIZ"
+		(property "Value" "2x16 lcd display"
 			(at 75.4065 20.32 0)
 			(effects
 				(font
